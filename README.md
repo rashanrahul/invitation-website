@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Aradhana Invitation
 
 A Sinhala/English invitation shop built with Next.js, Supabase and Tailwind CSS. Visitors can switch between English and Sinhala using the language control in the header. The gallery has example designs until your Supabase project is connected. Orders, order tracking, reviews and studio administration use Supabase.
+=======
+# Mali Invitation Studio
+
+A Sinhala/English invitation shop built with Next.js, Supabase and Tailwind CSS. The gallery has example designs until your Supabase project is connected. Orders, order tracking, reviews and studio administration use Supabase.
+>>>>>>> f772ce5dac82b253244927031c6854178a440a5f
 
 ## Run locally
 
@@ -35,16 +41,27 @@ A Sinhala/English invitation shop built with Next.js, Supabase and Tailwind CSS.
    npm run dev
    ```
 
+<<<<<<< HEAD
    Visit [http://localhost:3000](http://localhost:3000). The studio admin page is not linked from the public site; open `/admin` directly and sign in with the admin account's email and password.
+=======
+   Visit [http://localhost:3000](http://localhost:3000) and sign in to `/admin` using that Supabase account.
+>>>>>>> f772ce5dac82b253244927031c6854178a440a5f
 
 ## Included features
 
 - Searchable invitation gallery and wedding, birthday, corporate, and cricket categories.
+<<<<<<< HEAD
 - English and Sinhala customer-site language toggle.
 - Customer order form with a unique tracking code.
 - Private-by-default order records and a tracking RPC that only returns the order matching its unguessable code.
 - Review submission and admin approval before publication.
 - Private `/admin` sign-in, invitation/category management, image uploads, order status updates, and review moderation.
+=======
+- Customer order form with a unique tracking code.
+- Private-by-default order records and a tracking RPC that only returns the order matching its unguessable code.
+- Review submission and admin approval before publication.
+- Admin sign-in, invitation/category management, image uploads, order status updates, and review moderation.
+>>>>>>> f772ce5dac82b253244927031c6854178a440a5f
 - Supabase row-level security and a public `invitations` image bucket restricted to admin uploads.
 
 ## Deploy to Vercel

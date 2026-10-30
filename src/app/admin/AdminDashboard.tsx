@@ -370,7 +370,11 @@ export default function AdminDashboard() {
       <main className="admin-gate">
         <div className="admin-gate-card">
           <Link href="/" className="admin-back"><ArrowLeft size={15} /> Back to the studio</Link>
+<<<<<<< HEAD
           <span className="admin-eyebrow">ARADHANA · STUDIO ADMIN</span>
+=======
+          <span className="admin-eyebrow">MALI · STUDIO ADMIN</span>
+>>>>>>> f772ce5dac82b253244927031c6854178a440a5f
           <h1>One little setup step.</h1>
           <p>Add the Supabase project URL and publishable key to your <code>.env.local</code>, then restart the app to manage your studio.</p>
           <Link href="/" className="admin-gate-link">Visit the invitation studio <ArrowLeft size={15} /></Link>
@@ -382,7 +386,11 @@ export default function AdminDashboard() {
   return (
     <main className="admin-page">
       <header className="admin-header">
+<<<<<<< HEAD
         <Link className="admin-brand" href="/"><span className="admin-brand-mark">A</span><span>ARADHANA <small>INVITATION STUDIO</small></span></Link>
+=======
+        <Link className="admin-brand" href="/"><span className="admin-brand-mark">M</span><span>MALI <small>STUDIO</small></span></Link>
+>>>>>>> f772ce5dac82b253244927031c6854178a440a5f
         {session && <button className="admin-signout" type="button" onClick={signOut} disabled={working}><LogOut size={15} /> Sign out</button>}
       </header>
 
@@ -391,7 +399,11 @@ export default function AdminDashboard() {
       ) : !session ? (
         <section className="admin-login">
           <Link href="/" className="admin-back"><ArrowLeft size={14} /> Back to the studio</Link>
+<<<<<<< HEAD
           <div className="admin-login-mark">A</div>
+=======
+          <div className="admin-login-mark">M</div>
+>>>>>>> f772ce5dac82b253244927031c6854178a440a5f
           <span className="admin-eyebrow">JUST FOR THE STUDIO TEAM</span>
           <h1>Good to see you.</h1>
           <p>Sign in to manage your invitations, orders and lovely reviews.</p>
@@ -412,7 +424,11 @@ export default function AdminDashboard() {
         </section>
       ) : (
         <div className="admin-dashboard">
+<<<<<<< HEAD
           <div className="admin-welcome"><div><span className="admin-eyebrow">YOUR LITTLE CORNER OF ARADHANA</span><h1>Good things, <em>in progress.</em></h1><p>Manage the details that make every moment feel special.</p></div><div className="admin-stats"><span><strong>{invitations.length}</strong> designs</span><span><strong>{orders.length}</strong> orders</span><span><strong>{reviews.filter((review) => !review.approved).length}</strong> reviews to check</span></div></div>
+=======
+          <div className="admin-welcome"><div><span className="admin-eyebrow">YOUR LITTLE CORNER OF MALI</span><h1>Good things, <em>in progress.</em></h1><p>Manage the details that make every moment feel special.</p></div><div className="admin-stats"><span><strong>{invitations.length}</strong> designs</span><span><strong>{orders.length}</strong> orders</span><span><strong>{reviews.filter((review) => !review.approved).length}</strong> reviews to check</span></div></div>
+>>>>>>> f772ce5dac82b253244927031c6854178a440a5f
           <nav className="admin-tabs">{tabs.map((tab) => <button type="button" key={tab.id} className={activeTab === tab.id ? "active" : ""} onClick={() => { setActiveTab(tab.id); setMessage(""); }}>{tab.label}<span>{tab.id === "orders" ? orders.length : tab.id === "reviews" ? reviews.filter((review) => !review.approved).length : ""}</span></button>)}</nav>
           {message && <div className={`admin-message ${message.toLowerCase().includes("couldn't") || message.toLowerCase().includes("failed") ? "error" : ""}`} role="status">{message.toLowerCase().includes("couldn't") || message.toLowerCase().includes("failed") ? <X size={15} /> : <CheckCircle2 size={15} />}{message}</div>}
 

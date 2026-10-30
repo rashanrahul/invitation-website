@@ -19,7 +19,11 @@ const sinhala = Noto_Sans_Sinhala({
 });
 
 export const metadata: Metadata = {
+<<<<<<< HEAD
   title: "Aradhana Invitation | Made for your moments",
+=======
+  title: "Mali Invitation Studio | Made for your moments",
+>>>>>>> f772ce5dac82b253244927031c6854178a440a5f
   description:
     "Thoughtfully designed wedding, birthday and event invitations, made personal in Sri Lanka. ඔබේ විශේෂ මොහොතට ලස්සන ආරාධනා.",
 };
